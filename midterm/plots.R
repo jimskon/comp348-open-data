@@ -69,4 +69,5 @@ l3s <- data[, substr(names(data), 1, 2) == "L3" | substr(names(data), 1, 6) == '
 
 l2s[1:5] <- lapply(l2s[1:5], factor, levels = factors, ordered = FALSE)
 pp2s <- likert(l2s, grouping = l2s[,6])
-plot(likert)
+plot(pp2s)
+
